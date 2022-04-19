@@ -99,46 +99,133 @@
             "title": "Insights",
             "navItems": [
                 {
-                    "appId": "automationAnalytics",
-                    "title": "Reports",
-                    "href": "/ansible/insights/reports",
-                    "product": "Ansible Automation Analytics"
+                    "title": "Advisor",
+                    "expandable": true,
+                    "routes": [
+                        {
+                            "appId": "advisor",
+                            "title": "Recommendations",
+                            "href": "/ansible/advisor/recommendations",
+                            "product": "Red Hat Insights"
+                        },
+                        {
+                            "appId": "advisor",
+                            "title": "Systems",
+                            "href": "/ansible/advisor/systems",
+                            "product": "Red Hat Insights"
+                        },
+                        {
+                            "appId": "approval",
+                            "title": "Topics",
+                            "href": "/ansible/advisor/topics",
+                            "product": "Red Hat Insights"
+                        }
+                    ]
                 },
                 {
-                    "appId": "automationAnalytics",
-                    "title": "Savings Planner",
-                    "href": "/ansible/insights/savings-planner",
-                    "product": "Ansible Automation Analytics"
+                    "title": "Drift",
+                    "expandable": true,
+                    "routes": [
+                        {
+                            "appId": "drift",
+                            "title": "Comparison",
+                            "href": "/ansible/drift/",
+                            "product": "Red Hat Insights"
+                        },
+                        {
+                            "appId": "drift",
+                            "title": "Baselines",
+                            "href": "/ansible/drift/baselines",
+                            "product": "Red Hat Insights"
+                        }
+                    ]
                 },
                 {
-                    "appId": "automationAnalytics",
-                    "title": "Automation Calculator",
-                    "href": "/ansible/insights/reports/automation_calculator/",
-                    "product": "Ansible Automation Analytics"
-                },
+                    "appId": "inventory",
+                    "title": "Inventory",
+                    "href": "/ansible/inventory",
+                    "product": "Red Hat Insights"
+                }
+            ]
+        },
+        {
+            "groupId": "security",
+            "icon": "shield",
+            "title": "Security Insights",
+            "navItems": [
+                {
+                    "appId": "policies",
+                    "title": "Policies",
+                    "href": "/ansible/policies"
+                }
+            ]
+        },
+        {
+            "groupId": "automation-analytics",
+            "icon": "",
+            "title": "Automation Analytics",
+            "navItems": [
                 {
                     "appId": "automationAnalytics",
                     "title": "Organization Statistics",
-                    "href": "/ansible/insights/organization-statistics",
+                    "href": "/ansible/automation-analytics/organization-statistics",
                     "product": "Ansible Automation Analytics"
                 },
                 {
                     "appId": "automationAnalytics",
                     "title": "Job Explorer",
-                    "href": "/ansible/insights/job-explorer",
+                    "href": "/ansible/automation-analytics/job-explorer",
                     "product": "Ansible Automation Analytics"
                 },
                 {
                     "appId": "automationAnalytics",
                     "title": "Clusters",
-                    "href": "/ansible/insights/clusters",
+                    "href": "/ansible/automation-analytics/clusters",
+                    "product": "Ansible Automation Analytics"
+                },
+                {
+                    "appId": "automationAnalytics",
+                    "title": "Reports",
+                    "href": "/ansible/automation-analytics/reports",
+                    "product": "Ansible Automation Analytics"
+                },
+                {
+                    "appId": "automationAnalytics",
+                    "title": "Savings Planner",
+                    "href": "/ansible/automation-analytics/savings-planner",
+                    "product": "Ansible Automation Analytics"
+                },
+                {
+                    "appId": "automationAnalytics",
+                    "title": "Automation Calculator",
+                    "href": "/ansible/automation-analytics/automation-calculator",
                     "product": "Ansible Automation Analytics"
                 },
                 {
                     "appId": "automationAnalytics",
                     "title": "Notifications",
-                    "href": "/ansible/insights/notifications",
+                    "href": "/ansible/automation-analytics/notifications",
                     "product": "Ansible Automation Analytics"
+                }
+            ]
+        },
+        {
+            "groupId": "business",
+            "icon": "trend-up",
+            "title": "Business Insights",
+            "navItems": [
+                {
+                    "appId": "registration",
+                    "title": "Register Systems",
+                    "filterable": false,
+                    "href": "/ansible/registration",
+                    "product": "Red Hat Insights"
+                },
+                {
+                    "appId": "remediations",
+                    "title": "Remediations",
+                    "href": "/ansible/remediations",
+                    "product": "Red Hat Insights"
                 }
             ]
         },
@@ -149,4 +236,4 @@
             "href": "https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/"
         }
     ]
-} 
+}
